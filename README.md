@@ -1,72 +1,73 @@
-TransportSimple Assignment - Setup Guide
-This guide will help you set up and run both the frontend and backend parts of the TransportSimple assignment project.
+# TransportSimple-Assignment
+This repository contains both frontend and backend components for the TransportSimple-Assignment project.
 
-Prerequisites
-Node.js installed (for frontend)
+## Prerequisites
+- **Python**: Ensure Python is installed on your system.
+- **Virtualenv**: Install virtualenv using `pip install virtualenv`.
+- **Node.js and npm**: Ensure Node.js and npm are installed for the frontend.
 
-Python installed (for backend)
+## Setup Instructions
 
-Git installed
-
-Virtualenv installed (can be installed with pip install virtualenv)
-
-Setup Instructions
-1. Clone the Repository
-bash
-Copy
+### Clone the Repository
+1. Clone the repository using the following command:
 git clone https://github.com/niharMohantyDev/TransportSimple-Assignment.git
-2. Navigate to the Project Directory
-Right-click on the project folder and select "Open with Terminal" or open a terminal and navigate to the project directory manually.
 
-Frontend Setup
-Navigate to the Client directory:
+text
 
-bash
-Copy
+2. Open the cloned directory in a terminal.
+
+### Frontend Setup
+1. Navigate to the frontend directory:
 cd .\TransportSimple-Assignment\Client\
-Install dependencies:
 
-bash
-Copy
+text
+
+2. Install dependencies:
 npm i
-Start the development server:
 
-bash
-Copy
+text
+
+3. Start the frontend server:
 npm run dev
-Backend Setup
-Navigate to the Server directory:
 
-bash
-Copy
+text
+
+### Backend Setup
+1. Navigate to the backend directory:
 cd .\TransportSimple-Assignment\Server\
-Create a virtual environment:
 
-bash
-Copy
+text
+
+2. Create a virtual environment:
 virtualenv venv
-Activate the virtual environment:
 
-bash
-Copy
-.\venv\Scripts\activate
-If you encounter execution policy restrictions, run these commands first:
+text
 
-bash
-Copy
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
-.\venv\Scripts\activate.ps1 -ExecutionPolicy Bypass
-Install backend dependencies:
+3. Activate the virtual environment:
+- If your execution policy is restricted, you may need to adjust it first:
+  ```
+  Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+  .\venv\Scripts\activate.ps1 -ExecutionPolicy Bypass
+  ```
+- Otherwise, use:
+  ```
+  .\venv\Scripts\activate
+  ```
 
-bash
-Copy
+4. Install backend dependencies:
 pip install -r requirements.txt
-Start the backend server:
 
-bash
-Copy
+text
+
+5. Start the backend server:
 py manage.py runserver 8000
-Accessing the Application
-Frontend will typically run on http://localhost:3000 (or the port specified in your frontend configuration)
 
-Backend will run on http://localhost:8000
+text
+
+## Running the Application
+- Ensure both frontend and backend servers are running.
+- Access the application through the frontend URL provided by `npm run dev`.
+
+## Troubleshooting
+- If you encounter issues with virtual environment activation, check your system's execution policy settings.
+- Ensure all dependencies are correctly installed before running the servers.
