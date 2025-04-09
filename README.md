@@ -12,7 +12,7 @@ This repository contains both frontend and backend components for the TransportS
 1. Clone the repository using the following command:
 git clone https://github.com/niharMohantyDev/TransportSimple-Assignment.git
 
-text
+
 
 2. Open the cloned directory in a terminal.
 
@@ -20,28 +20,28 @@ text
 1. Navigate to the frontend directory:
 cd .\TransportSimple-Assignment\Client\
 
-text
+
 
 2. Install dependencies:
 npm i
 
-text
+
 
 3. Start the frontend server:
 npm run dev
 
-text
+
 
 ### Backend Setup
 1. Navigate to the backend directory:
 cd .\TransportSimple-Assignment\Server\
 
-text
+
 
 2. Create a virtual environment:
 virtualenv venv
 
-text
+
 
 3. Activate the virtual environment:
 - If your execution policy is restricted, you may need to adjust it first:
@@ -57,12 +57,12 @@ text
 4. Install backend dependencies:
 pip install -r requirements.txt
 
-text
+
 
 5. Start the backend server:
 py manage.py runserver 8000
 
-text
+
 
 ## Running the Application
 - Ensure both frontend and backend servers are running.
