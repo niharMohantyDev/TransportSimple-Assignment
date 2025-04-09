@@ -399,7 +399,7 @@ const Dashboard = () => {
       )}
 
       <div className="dashboard-footer">
-        <p>Welcome to your personal dashboard. Here you can manage all your questions.</p>
+        <p>Made with ❤️ by Nihar, ©️ all rights reserved</p>
       </div>
     </div>
   );
