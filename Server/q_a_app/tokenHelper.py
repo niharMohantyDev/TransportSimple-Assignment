@@ -29,7 +29,7 @@ def refreshAccessTokens(token, accessTokenObj):
     if time_difference_minutes > 10: #10 minutes is expiry time for refresh token
         accessTokenObj.delete()
         refreshTokenObj.delete()
-        return {"error": "Refresh token has expired (older than 5 minutes)"}
+        return {"error": "Refresh token has expired"}
     
     refreshToken = refreshTokenObj.token
     try:
