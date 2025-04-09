@@ -79,7 +79,13 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
 pip install -r requirements.txt
 ```
 
-5. Run the Django development server:
+5. MIgrate to sqllite db:
+
+```bash
+py manage.py migrate
+```
+
+6. Run the Django development server:
 
 ```bash
 py manage.py runserver 8000
