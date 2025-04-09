@@ -10,7 +10,7 @@ def checkTokenExpiry(token):
     updatedTime = accessTokenObj.updated_at
     timeDifference = (timezone.now() - updatedTime).total_seconds() / 60
 
-    if timeDifference > 1:
+    if timeDifference > 5: # 5 minutes is expiry time for access token
         return refreshAccessTokens(token, accessTokenObj)
     return {
         "status": "valid", 
@@ -26,7 +26,7 @@ def refreshAccessTokens(token, accessTokenObj):
     createdTimeOfRefreshToken = refreshTokenObj.created_at
     time_difference_minutes = (timezone.now() - createdTimeOfRefreshToken).total_seconds() / 60
 
-    if time_difference_minutes > 5:
+    if time_difference_minutes > 10: #10 minutes is expiry time for refresh token
         accessTokenObj.delete()
         refreshTokenObj.delete()
         return {"error": "Refresh token has expired (older than 5 minutes)"}
