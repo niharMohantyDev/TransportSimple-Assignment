@@ -1,73 +1,37 @@
-# TransportSimple-Assignment
-This repository contains both frontend and backend components for the TransportSimple-Assignment project.
+TransportSimple Assignment
+This project consists of a Frontend (React) and Backend (Django) setup for the TransportSimple Assignment.
 
-## Prerequisites
-- **Python**: Ensure Python is installed on your system.
-- **Virtualenv**: Install virtualenv using `pip install virtualenv`.
-- **Node.js and npm**: Ensure Node.js and npm are installed for the frontend.
+Getting Started
+Follow the steps below to run the application on your local system.
 
-## Setup Instructions
-
-### Clone the Repository
-1. Clone the repository using the following command:
+Step 1: Clone the Repository
 git clone https://github.com/niharMohantyDev/TransportSimple-Assignment.git
-
-
-
-2. Open the cloned directory in a terminal.
-
-### Frontend Setup
-1. Navigate to the frontend directory:
+Step 2: Frontend Setup
+Navigate to the client directory:
 cd .\TransportSimple-Assignment\Client\
-
-
-
-2. Install dependencies:
-npm i
-
-
-
-3. Start the frontend server:
+Install dependencies:
+npm install
+Start the development server:
 npm run dev
-
-
-
-### Backend Setup
-1. Navigate to the backend directory:
+Step 3: Backend Setup
+Navigate to the server directory:
 cd .\TransportSimple-Assignment\Server\
-
-
-
-2. Create a virtual environment:
+Create a virtual environment (make sure Python and virtualenv are installed):
 virtualenv venv
+To install virtualenv if not already installed:
 
+pip install virtualenv
+Activate the virtual environment:
+.\venv\Scripts\activate
+Note: If you get a policy restriction error, run:
 
-
-3. Activate the virtual environment:
-- If your execution policy is restricted, you may need to adjust it first:
-  ```
-  Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
-  .\venv\Scripts\activate.ps1 -ExecutionPolicy Bypass
-  ```
-- Otherwise, use:
-  ```
-  .\venv\Scripts\activate
-  ```
-
-4. Install backend dependencies:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+.\venv\Scripts\activate.ps1 -ExecutionPolicy Bypass
+Install project dependencies:
 pip install -r requirements.txt
-
-
-
-5. Start the backend server:
+Run the Django development server:
 py manage.py runserver 8000
-
-
-
-## Running the Application
-- Ensure both frontend and backend servers are running.
-- Access the application through the frontend URL provided by `npm run dev`.
-
-## Troubleshooting
-- If you encounter issues with virtual environment activation, check your system's execution policy settings.
-- Ensure all dependencies are correctly installed before running the servers.
+Notes
+Make sure Python is installed on your system.
+The frontend runs on Vite + React.
+The backend is built with Django and requires the virtual environment for isolated dependencies.
