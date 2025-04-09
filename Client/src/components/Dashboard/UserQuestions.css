@@ -1,0 +1,156 @@
+.user-questions-container {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.user-questions-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.user-question-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.user-question-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.question-header.selected {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+.question-id {
+  color: #7f8c8d;
+}
+
+.question-status {
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.question-status.active {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.question-status.inactive {
+  background-color: #95a5a6;
+  color: white;
+}
+
+.question-content {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.question-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.archive-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.2s;
+}
+
+.archive-button:hover {
+  background-color: #c0392b;
+}
+
+.archive-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.answers-section {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.answers-section h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.answers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer-card {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.answer-content {
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+.answer-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #7f8c8d;
+}
+
+.answer-votes {
+  display: flex;
+  gap: 10px;
+}
+
+.likes {
+  color: #2ecc71;
+}
+
+.dislikes {
+  color: #e74c3c;
+}
+
+.loading {
+  color: #7f8c8d;
+  text-align: center;
+  padding: 10px;
+}
+
+.error {
+  color: #e74c3c;
+  text-align: center;
+  padding: 10px;
+}
